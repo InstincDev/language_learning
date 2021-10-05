@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Language Study</title>
+    </head>
+    <!--Language Home Page-->
+    <body>
+        <!--Bootstrap nav bar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Language Study</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="spanish.html">Spanish</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="french.html">French</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="german.html">German</a>
+                    </li>
+                </ul>
+
+                    <span id="google_translate_element"></span>
+            </div>
+        </nav>
+
+
+        <main>
+            <!--Bootstrap jumbotron-->
+            <div class="jumbotron">
+              <h1 class="display-4">Welcome to the World of Language Learning!</h1>
+              <p class="lead">This website contains the schedule and access to web-based resources for learning Spanish, French, and German.</p>
+              <hr class="my-4">
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+         </div>
+
+            <table class="introcards">
+                <tbody>
+                    <tr>
+                        <!--Language Articles-->
+                            <!--Start Spanish Article-->
+                        <td>
+                            <!-- div contaning the id for CSS of Spanish flag and JS function call-->
+                            <div id="spanishflag" onclick="showspanish()"></div>
+                            <!--Spanish card made with Bootstrap, that links to page; displays after onclick function is called -->
+                            <div id="spanish" class="shadow-sm p-3 mb-5 bg-danger rounded">
+                                <h4>New Word</h4>
+                                <h3 class="spanish_wd">hola</h3>
+                                <article>
+                                    <p>
+                                    Learn to speak and read in Spanish.
+                                    </p>
+                                    <!--Link to Spanish page-->
+                                    <a href="spanish.html" class="text-decoration-none"><h5>Learn More!</h5></a>
+                                </article>
+                            </div>
+                        </td>
+                        <!--Start French Article-->
+                        <td>
+                            <!--div containing the id for CSS of French flag and JS function call-->
+                            <div id="frenchflag" onclick="showfrench()"></div>
+                            <!--French card made with Bootstrap, that links to page; displays after onclick function is called-->
+                            <div id="french" class="shadow-sm p-3 mb-5 bg-primary rounded">
+                                <h4>New Word</h4>
+                                <h3 class="french_wd">bonjor</h3>
+                                <article>
+                                    <p>
+                                    Learn to speak and read in French.
+                                    </p>
+                                    <!--Link to French page-->
+                                    <a href="french.html" class="text-decoration-none"><h5>Learn More!</h5></a>
+                                </article>
+                            </div>
+                        </td>
+                        <!--Start German Article-->
+                        <td>
+                            <!--div containing the id for CSS of German flag and JS function call-->
+                            <div id="germanflag" onclick="showgerman()"></div>
+                            <!--German card made with Bootstrap, that links to page; displays after onclick function is called-->
+                            <div id="german" class="shadow-sm p-3 mb-5 bg-success rounded">
+                                <h4>New Word</h4>
+                                <h3 class="german_wd">hallo</h3>
+                                <article>
+                                    <p>
+                                    Learn to speak and read in German.
+                                    </p>
+                                    <!--Link to German page-->
+                                    <a href="german.html" class="text-decoration-none"><h5>Learn More!</h5></a>
+                                </article>
+                            </div>
+                        </td>
+                </tbody>
+            </table>
+
+        </main>
+        <div class="footer">
+
+                <span class="cc">
+                    &copy; 2020
+                </span>
+         </div>
+         <script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+        </script>
+        <script>
+
+            function showspanish(){
+                document.getElementById("spanish").style.display="block";
+                document.getElementById("spanishflag").style.display="none";
+            }
+            function showfrench(){
+                document.getElementById("french").style.display="block";
+                document.getElementById("frenchflag").style.display="none";
+            }
+            function showgerman(){
+                document.getElementById("german").style.display="block";
+                document.getElementById("germanflag").style.display="none";
+            }
+
+        </script>
+
+    </body>
+</html>
