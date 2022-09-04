@@ -14,7 +14,7 @@ https://language-study-tracker-instincdev.netlify.app
 
 ## Tech Used
 
-![HTML5 BADGE](https://img.shields.io/static/v1?label=|&message=HTML5&color=03989E&style=plastic&logo=html5)  ![CSS BADGE](https://img.shields.io/static/v1?label=|&message=CSS3&color=03989e&style=plastic&logo=css3)  ![JAVASCRIPT BADGE](https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=03989e&style=plastic&logo=javascript)
+![HTML5 BADGE](https://img.shields.io/static/v1?label=|&message=HTML5&color=03989E&style=plastic&logo=html5)  ![CSS BADGE](https://img.shields.io/static/v1?label=|&message=CSS3&color=03989e&style=plastic&logo=css3)
 
 
 ## Future Plans
